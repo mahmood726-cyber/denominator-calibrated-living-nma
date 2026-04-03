@@ -1,0 +1,27 @@
+{
+  "project": "dclnma",
+  "study_area": "cardiorenal",
+  "outcome": "composite CV death or HF hospitalization",
+  "cutoff_dates": [
+    "2019-09-01",
+    "2020-09-01",
+    "2021-09-01",
+    "2022-09-01"
+  ],
+  "sources": {
+    "registries": [
+      "ClinicalTrials.gov"
+    ],
+    "publications": [
+      "PubMed",
+      "OpenAlex"
+    ],
+    "pdf_extraction": true
+  },
+  "arbitration": {
+    "disagreement_low": 0.05,
+    "disagreement_high": 0.15,
+    "mid_inflation": 1.3,
+    "high_inflation": 2.0
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "publication_id": "pub_dapa_hf_2019",
+    "trial_id": "dapa_hf",
+    "pmid": "31535768",
+    "title": "Dapagliflozin in Patients with Heart Failure and Reduced Ejection Fraction",
+    "journal": "New England Journal of Medicine",
+    "year": 2019,
+    "publication_date": "2019-09-01",
+    "endpoint_key": "cv_death_or_hf_hospitalization",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_emperor_reduced_2020",
+    "trial_id": "emperor_reduced",
+    "pmid": "32865377",
+    "title": "Empagliflozin Outcome Trial in Patients with Chronic Heart Failure and a Reduced Ejection Fraction",
+    "journal": "New England Journal of Medicine",
+    "year": 2020,
+    "publication_date": "2020-09-01",
+    "endpoint_key": "cv_death_or_hf_hospitalization",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_emperor_preserved_2021",
+    "trial_id": "emperor_preserved",
+    "pmid": "34449189",
+    "title": "Empagliflozin in Heart Failure with a Preserved Ejection Fraction",
+    "journal": "New England Journal of Medicine",
+    "year": 2021,
+    "publication_date": "2021-09-01",
+    "endpoint_key": "cv_death_or_hf_hospitalization",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_deliver_2022",
+    "trial_id": "deliver",
+    "pmid": "36027577",
+    "title": "Dapagliflozin in Heart Failure with Mildly Reduced or Preserved Ejection Fraction",
+    "journal": "New England Journal of Medicine",
+    "year": 2022,
+    "publication_date": "2022-09-01",
+    "endpoint_key": "cv_death_or_hf_hospitalization",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+  }
+]

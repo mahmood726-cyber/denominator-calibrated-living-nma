@@ -1,0 +1,5 @@
+domain,trial_id,registry_id,short_name,condition,population,treatment,comparator,outcome_key,outcome_label,follow_up_months,planned_sample_size,randomized_sample_size,design,reported,registry_status
+cardio,dapa_hf,NCT03036124,DAPA-HF,heart failure,symptomatic HFrEF,dapagliflozin,placebo,cv_death_or_hf_hospitalization,Composite of cardiovascular death or worsening heart failure,18.0,4744,4744,rct,true,completed
+cardio,emperor_reduced,NCT03057977,EMPEROR-Reduced,heart failure,symptomatic HFrEF,empagliflozin,placebo,cv_death_or_hf_hospitalization,Composite of cardiovascular death or worsening heart failure,16.0,3730,3730,rct,true,completed
+cardio,emperor_preserved,NCT03057951,EMPEROR-Preserved,heart failure,symptomatic HFpEF,empagliflozin,placebo,cv_death_or_hf_hospitalization,Composite of cardiovascular death or worsening heart failure,26.0,5988,5988,rct,true,completed
+cardio,deliver,NCT03619213,DELIVER,heart failure,symptomatic HFpEF or HFmrEF,dapagliflozin,placebo,cv_death_or_hf_hospitalization,Composite of cardiovascular death or worsening heart failure,27.0,6263,6263,rct,true,completed

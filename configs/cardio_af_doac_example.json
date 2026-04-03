@@ -1,0 +1,9 @@
+{
+  "project": "dclnma",
+  "study_area": "cardio",
+  "domain": "atrial_fibrillation",
+  "outcome": "Stroke or systemic embolism",
+  "outcome_key": "stroke_or_systemic_embolism",
+  "dataset_dir": "../data/cardio_af_doac",
+  "analysis_mode": "linked_cardio_example"
+}

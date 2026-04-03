@@ -1,0 +1,26 @@
+{
+  "project": "dclnma",
+  "study_area": "cardiorenal",
+  "master_seed": 20260319,
+  "network": {
+    "num_treatments": 5,
+    "num_replications": 250,
+    "heterogeneity": "moderate",
+    "design_mix": "rct_plus_nrs"
+  },
+  "missingness": {
+    "silent_trial_rate": 0.25,
+    "endpoint_missing_rate": 0.2,
+    "publication_selection_strength": "moderate"
+  },
+  "data_quality": {
+    "extraction_noise_sd": 0.03,
+    "provenance_quality": "mixed",
+    "registry_linkage_completeness": 0.85
+  },
+  "validation_gates": {
+    "min_coverage": 0.9,
+    "max_false_reassurance": 0.1,
+    "max_reversal_rate": 0.15
+  }
+}

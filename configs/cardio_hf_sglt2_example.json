@@ -1,0 +1,9 @@
+{
+  "project": "dclnma",
+  "study_area": "cardio",
+  "domain": "heart_failure",
+  "outcome": "Composite of cardiovascular death or worsening heart failure",
+  "outcome_key": "cv_death_or_hf_hospitalization",
+  "dataset_dir": "../data/cardio_hf_sglt2",
+  "analysis_mode": "linked_cardio_example"
+}

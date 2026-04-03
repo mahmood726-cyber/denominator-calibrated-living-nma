@@ -1,0 +1,54 @@
+[
+  {
+    "publication_id": "pub_aristotle_2011",
+    "trial_id": "aristotle",
+    "pmid": "21870978",
+    "title": "Apixaban versus Warfarin in Patients with Atrial Fibrillation",
+    "journal": "New England Journal of Medicine",
+    "year": 2011,
+    "publication_date": "2011-09-01",
+    "endpoint_key": "stroke_or_systemic_embolism",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_re_ly_2009",
+    "trial_id": "re_ly_150",
+    "pmid": "19717844",
+    "title": "Dabigatran versus Warfarin in Patients with Atrial Fibrillation",
+    "journal": "New England Journal of Medicine",
+    "year": 2009,
+    "publication_date": "2009-09-01",
+    "endpoint_key": "stroke_or_systemic_embolism",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_rocket_af_2011",
+    "trial_id": "rocket_af",
+    "pmid": "21830957",
+    "title": "Rivaroxaban versus Warfarin in Nonvalvular Atrial Fibrillation",
+    "journal": "New England Journal of Medicine",
+    "year": 2011,
+    "publication_date": "2011-09-01",
+    "endpoint_key": "stroke_or_systemic_embolism",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+  },
+  {
+    "publication_id": "pub_engage_af_2013",
+    "trial_id": "engage_af_60",
+    "pmid": "24251359",
+    "title": "Edoxaban versus Warfarin in Patients with Atrial Fibrillation",
+    "journal": "New England Journal of Medicine",
+    "year": 2013,
+    "publication_date": "2013-11-01",
+    "endpoint_key": "stroke_or_systemic_embolism",
+    "endpoint_reported": true,
+    "design": "rct",
+    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+  }
+]

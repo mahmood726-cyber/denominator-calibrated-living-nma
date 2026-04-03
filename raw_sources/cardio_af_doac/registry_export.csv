@@ -1,0 +1,5 @@
+domain,trial_id,registry_id,short_name,condition,population,treatment,comparator,outcome_key,outcome_label,follow_up_months,planned_sample_size,randomized_sample_size,design,reported,registry_status
+cardio,aristotle,NCT00412984,ARISTOTLE,atrial fibrillation,nonvalvular atrial fibrillation,apixaban,warfarin,stroke_or_systemic_embolism,Stroke or systemic embolism,21.0,18201,18201,rct,true,completed
+cardio,re_ly_150,NCT00262600,RE-LY 150 mg,atrial fibrillation,nonvalvular atrial fibrillation,dabigatran_150mg,warfarin,stroke_or_systemic_embolism,Stroke or systemic embolism,24.0,12098,12098,rct,true,completed
+cardio,rocket_af,NCT00403767,ROCKET AF,atrial fibrillation,nonvalvular atrial fibrillation,rivaroxaban,warfarin,stroke_or_systemic_embolism,Stroke or systemic embolism,23.0,14264,14244,rct,true,completed
+cardio,engage_af_60,NCT00781391,ENGAGE AF 60 mg,atrial fibrillation,nonvalvular atrial fibrillation,edoxaban_60mg,warfarin,stroke_or_systemic_embolism,Stroke or systemic embolism,33.0,14071,14071,rct,true,completed
