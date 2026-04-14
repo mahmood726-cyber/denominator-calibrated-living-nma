@@ -6,7 +6,7 @@ This dataset is the first canonical cardio seed for the DCLNMA scaffold.
 
 The trial-level values were seeded from the local review asset:
 
-- `C:/Users/user/SGLT2i_HF_REVIEW.html`
+- `SGLT2i_HF_REVIEW.html`
 
 The extraction records preserve the local line references used to seed the
 canonical files.

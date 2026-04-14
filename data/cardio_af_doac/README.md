@@ -6,7 +6,7 @@ This is the second canonical cardio seed for the DCLNMA scaffold.
 
 The trial-level values were seeded from:
 
-- `C:/Users/user/DOAC_AF_REVIEW.html`
+- `DOAC_AF_REVIEW.html`
 
 ## Included trials
 

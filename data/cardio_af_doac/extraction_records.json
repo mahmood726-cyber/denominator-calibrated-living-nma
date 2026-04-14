@@ -22,7 +22,7 @@
       "source_type": "html_seed",
       "locator": "line=221",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/DOAC_AF_REVIEW.html",
+      "source_file": "DOAC_AF_REVIEW.html",
       "quote": "HR 0.79; 95% CI, 0.66-0.95",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -50,7 +50,7 @@
       "source_type": "html_seed",
       "locator": "line=222",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/DOAC_AF_REVIEW.html",
+      "source_file": "DOAC_AF_REVIEW.html",
       "quote": "HR 0.66; 95% CI, 0.53-0.82",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -78,7 +78,7 @@
       "source_type": "html_seed",
       "locator": "line=223",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/DOAC_AF_REVIEW.html",
+      "source_file": "DOAC_AF_REVIEW.html",
       "quote": "HR 0.79; 95% CI, 0.66-0.96",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -106,7 +106,7 @@
       "source_type": "html_seed",
       "locator": "line=224",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/DOAC_AF_REVIEW.html",
+      "source_file": "DOAC_AF_REVIEW.html",
       "quote": "HR 0.79; 95% CI, 0.63-0.99",
       "parser_name": "manual_seed_from_local_review"
     }

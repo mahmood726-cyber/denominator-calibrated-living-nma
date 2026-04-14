@@ -10,7 +10,7 @@
     "endpoint_key": "stroke_or_systemic_embolism",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+    "source_file": "DOAC_AF_REVIEW.html"
   },
   {
     "publication_id": "pub_re_ly_2009",
@@ -23,7 +23,7 @@
     "endpoint_key": "stroke_or_systemic_embolism",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+    "source_file": "DOAC_AF_REVIEW.html"
   },
   {
     "publication_id": "pub_rocket_af_2011",
@@ -36,7 +36,7 @@
     "endpoint_key": "stroke_or_systemic_embolism",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+    "source_file": "DOAC_AF_REVIEW.html"
   },
   {
     "publication_id": "pub_engage_af_2013",
@@ -49,6 +49,6 @@
     "endpoint_key": "stroke_or_systemic_embolism",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/DOAC_AF_REVIEW.html"
+    "source_file": "DOAC_AF_REVIEW.html"
   }
 ]

@@ -9,8 +9,8 @@ format used by the DCLNMA raw-ingestion pipeline.
 
 The bridge targets the real JSONL shape seen in local extractor outputs under:
 
-- `C:/Users/user/rct-extractor-v2/output/.../results.jsonl`
-- `C:/Users/user/rct-extractor-v2/output/.../results_ai_validated.jsonl`
+- `<extractor_output_dir>/rct-extractor-v2/output/.../results.jsonl`
+- `<extractor_output_dir>/rct-extractor-v2/output/.../results_ai_validated.jsonl`
 
 It reads:
 

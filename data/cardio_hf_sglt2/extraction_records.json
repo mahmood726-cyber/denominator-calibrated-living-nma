@@ -22,7 +22,7 @@
       "source_type": "html_seed",
       "locator": "line=193",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html",
+      "source_file": "SGLT2i_HF_REVIEW.html",
       "quote": "HR 0.74; 95% CI, 0.65 to 0.85",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -50,7 +50,7 @@
       "source_type": "html_seed",
       "locator": "line=194",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html",
+      "source_file": "SGLT2i_HF_REVIEW.html",
       "quote": "HR 0.75; 95% CI, 0.65 to 0.86",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -78,7 +78,7 @@
       "source_type": "html_seed",
       "locator": "line=195",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html",
+      "source_file": "SGLT2i_HF_REVIEW.html",
       "quote": "HR 0.79; 95% CI, 0.69 to 0.90",
       "parser_name": "manual_seed_from_local_review"
     }
@@ -106,7 +106,7 @@
       "source_type": "html_seed",
       "locator": "line=196",
       "confidence": 0.98,
-      "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html",
+      "source_file": "SGLT2i_HF_REVIEW.html",
       "quote": "HR 0.82; 95% CI, 0.73 to 0.92",
       "parser_name": "manual_seed_from_local_review"
     }

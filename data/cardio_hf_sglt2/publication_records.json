@@ -10,7 +10,7 @@
     "endpoint_key": "cv_death_or_hf_hospitalization",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+    "source_file": "SGLT2i_HF_REVIEW.html"
   },
   {
     "publication_id": "pub_emperor_reduced_2020",
@@ -23,7 +23,7 @@
     "endpoint_key": "cv_death_or_hf_hospitalization",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+    "source_file": "SGLT2i_HF_REVIEW.html"
   },
   {
     "publication_id": "pub_emperor_preserved_2021",
@@ -36,7 +36,7 @@
     "endpoint_key": "cv_death_or_hf_hospitalization",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+    "source_file": "SGLT2i_HF_REVIEW.html"
   },
   {
     "publication_id": "pub_deliver_2022",
@@ -49,6 +49,6 @@
     "endpoint_key": "cv_death_or_hf_hospitalization",
     "endpoint_reported": true,
     "design": "rct",
-    "source_file": "C:/Users/user/SGLT2i_HF_REVIEW.html"
+    "source_file": "SGLT2i_HF_REVIEW.html"
   }
 ]
