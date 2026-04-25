@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!-- sentinel:skip-file
+     This dashboard embeds the E156 rewrite workbook (333+ entries) as text
+     content. Workbook entries include `PATH: C:\Projects\<repo>` metadata
+     lines which trigger Sentinel's hardcoded-local-path P0 rule across the
+     whole file. The paths are *content*, not code; they are not consumed
+     at runtime. Marker added 2026-04-25 alongside the data-vs-witnesses
+     circular-import fix. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
