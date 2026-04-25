@@ -1,9 +1,15 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from typing import TYPE_CHECKING
 
 from .models import EvidenceBundle, ExtractionRecord, LinkedTrialEvidence
-from ..witnesses.base import WitnessContext
+
+if TYPE_CHECKING:
+    # Imported only for type hints to break the data <-> witnesses circular
+    # import (data/__init__ pulled .linkage which pulled witnesses.base which
+    # pulled data.models — and data was still mid-init). Fix 2026-04-25.
+    from ..witnesses.base import WitnessContext
 
 
 def inverse_variance_pool(extractions: list[ExtractionRecord]) -> tuple[float, float]:
@@ -102,7 +108,8 @@ def summarize_linkage(linked_trials: list[LinkedTrialEvidence]) -> dict:
     }
 
 
-def build_witness_context(bundle: EvidenceBundle, outcome_key: str) -> WitnessContext:
+def build_witness_context(bundle: EvidenceBundle, outcome_key: str) -> "WitnessContext":
+    from ..witnesses.base import WitnessContext  # lazy: see TYPE_CHECKING note above
     linked_trials = link_trial_evidence(bundle, outcome_key)
     extraction_records = [
         record for record in bundle.extraction_records if record.endpoint_key == outcome_key
