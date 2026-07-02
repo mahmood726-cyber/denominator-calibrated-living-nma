@@ -13,8 +13,20 @@ if TYPE_CHECKING:
 
 
 def inverse_variance_pool(extractions: list[ExtractionRecord]) -> tuple[float, float]:
+    """Pool log-effects by inverse-variance weighting.
+
+    Every extraction must carry a strictly positive ``standard_error``. A zero
+    SE yields an infinite weight (a cryptic ``ZeroDivisionError``), and a
+    negative SE is silently accepted by ``se ** 2`` and produces a wrong pooled
+    estimate, so both are rejected up front.
+    """
     if not extractions:
         raise ValueError("At least one extraction record is required.")
+    for record in extractions:
+        if not record.standard_error > 0:
+            raise ValueError(
+                f"standard_error must be positive; got {record.standard_error!r}."
+            )
     weights = [1.0 / (record.standard_error**2) for record in extractions]
     total_weight = sum(weights)
     pooled = sum(weight * record.log_effect for weight, record in zip(weights, extractions)) / total_weight
