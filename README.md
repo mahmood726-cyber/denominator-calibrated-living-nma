@@ -97,6 +97,53 @@ Generate a mapping CSV automatically from canonical publication metadata:
 dclnma generate-study-mapping --results-jsonl raw_sources/cardio_hf_sglt2/sample_rct_extractor_results.jsonl --data-root data --out-csv generated/cardio_hf_sglt2/auto_mapping.csv
 ```
 
+Describe the treatment network and check connectivity (a network meta-analysis
+requires a single connected component):
+
+```bash
+dclnma describe-network --config configs/cardio_hf_sglt2_example.json
+```
+
+Verify the living-update pool equals a from-scratch batch recompute for a config
+(exit code 0 = equivalent):
+
+```bash
+dclnma living-benchmark --config configs/cardio_af_doac_example.json
+```
+
+## Living update and network connectivity
+
+Because this is a *living* network meta-analysis, the pooled estimate must be
+updatable as new trials arrive without silently drifting away from what a full
+recompute would give.
+
+- `dclnma.data.network` builds the treatment-comparison graph, computes its
+  connected components, and exposes `require_connected_network`, which refuses
+  to proceed on a **disconnected** (or empty) network — the standard NMA
+  precondition of checking connectivity first.
+- `dclnma.living` maintains an O(1)-per-record inverse-variance accumulator
+  (`LivingPoolState`) and provides `assert_living_equivalence`, which pools the
+  same records incrementally and in batch and asserts the two agree to numerical
+  precision. `order_invariance_report` confirms the pooled estimate does not
+  depend on the order trials arrive in.
+
+The incremental path reuses `inverse_variance_pool`, so the living and batch
+estimates are the same arithmetic — no pooled numbers change.
+
+### Reproducible benchmark
+
+`benchmarks/living_equivalence_benchmark.py` runs the living-vs-batch
+equivalence check on every seeded cardio dataset and prints a table plus the
+living trajectory. Run it from the repository root:
+
+```bash
+python benchmarks/living_equivalence_benchmark.py
+```
+
+Expected result: every dataset reports `PASS` with an `effect_gap` at
+floating-point epsilon (≈1e-16), and the script exits 0. It doubles as a CI gate
+for the living-update correctness contract.
+
 ## Repository layout
 
 ```text

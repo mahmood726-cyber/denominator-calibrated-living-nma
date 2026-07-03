@@ -5,7 +5,9 @@ import json
 
 from .data.builders import build_canonical_dataset
 from .data.extractor_bridge import bridge_rct_extractor_jsonl
+from .data.network import build_treatment_network, require_connected_network
 from .data.study_mapping import generate_study_mapping
+from .living import assert_living_equivalence, living_update, order_invariance_report
 from .pipeline import LivingNMAPipeline
 
 
@@ -51,6 +53,18 @@ def build_parser() -> argparse.ArgumentParser:
     mapping_parser.add_argument("--out-csv", required=True)
     mapping_parser.add_argument("--source-id", default="rct_extractor_v5")
     mapping_parser.add_argument("--status-filter", default="extracted")
+
+    network_parser = subparsers.add_parser(
+        "describe-network",
+        help="Build the treatment network for a config's outcome and report connectivity.",
+    )
+    network_parser.add_argument("--config", required=True)
+
+    living_parser = subparsers.add_parser(
+        "living-benchmark",
+        help="Verify the living-update pool equals a from-scratch batch recompute for a config.",
+    )
+    living_parser.add_argument("--config", required=True)
 
     return parser
 
@@ -103,6 +117,37 @@ def main() -> int:
         )
         print(json.dumps(result, indent=2))
         return 0
+
+    if args.command == "describe-network":
+        pipeline = LivingNMAPipeline.from_config(args.config)
+        bundle = pipeline.load_bundle()
+        outcome_key = pipeline.config.get("outcome_key")
+        if bundle is None or not outcome_key:
+            parser.error("Config must define dataset_dir and outcome_key for describe-network.")
+        network = build_treatment_network(bundle, outcome_key)
+        # Surface connectivity but do not hard-fail here: describing a broken
+        # network is a legitimate diagnostic use.
+        print(json.dumps(network.summary(), indent=2))
+        return 0 if network.is_connected else 1
+
+    if args.command == "living-benchmark":
+        pipeline = LivingNMAPipeline.from_config(args.config)
+        bundle = pipeline.load_bundle()
+        outcome_key = pipeline.config.get("outcome_key")
+        if bundle is None or not outcome_key:
+            parser.error("Config must define dataset_dir and outcome_key for living-benchmark.")
+        # Refuse to benchmark a disconnected network — an NMA on one is undefined.
+        require_connected_network(build_treatment_network(bundle, outcome_key))
+        records = [r for r in bundle.extraction_records if r.endpoint_key == outcome_key]
+        equivalence = assert_living_equivalence(records)
+        order = order_invariance_report(records)
+        result = {
+            "equivalence": equivalence,
+            "order_invariance": order,
+            "trajectory": living_update(records),
+        }
+        print(json.dumps(result, indent=2))
+        return 0 if equivalence["equivalent"] and order["order_invariant"] else 1
 
     parser.error("Unknown command.")
     return 2
