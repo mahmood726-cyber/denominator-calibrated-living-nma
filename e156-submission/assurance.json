@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "analysis_rerun": "not-run",
+    "citation_cascade": "pass",
+    "claim_language": "pass",
+    "code_runs": "pass",
+    "dashboard_match": "not-run",
+    "data_file_present": "pass",
+    "denominator_logic": "pass",
+    "external_review": "not-run"
+  },
+  "evidence": {
+    "overmind_bundle": "F:\\overmind\\data\\nightly_reports\\bundles\\2026-05-17\\denominator-cali.json",
+    "stuck_failures": "F:\\Models\\Denominator_Calibrated_Living_NMA\\STUCK_FAILURES.jsonl"
+  },
+  "issued_at": "2026-05-25T09:39:11Z",
+  "issued_by": "build_assurance_jsons.py",
+  "local_path": "F:\\Models\\Denominator_Calibrated_Living_NMA",
+  "project_name": "Denominator_Calibrated_Living_NMA",
+  "tier": "bronze",
+  "tier_rule": "bronze = citation_cascade != fail AND data_file_present == pass AND code_runs in (pass, not-run); silver = + dashboard_match == pass AND claim_language == pass; gold = + analysis_rerun == pass AND external_review == pass",
+  "version": 1,
+  "workbook_num": 242
+}
